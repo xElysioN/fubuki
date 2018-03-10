@@ -1,7 +1,7 @@
 <template>
   <div id='home'>
     <router-link :to="{ name: 'Game' }">Partie Rapide</router-link>
-    <a href="">Règles du jeu</a>
+    <router-link :to="{ name: 'Rules' }">Règles du jeu</router-link>
     <router-link :to="{ name: 'Parameters' }">Paramètres</router-link>
   </div>
 </template>
@@ -21,10 +21,14 @@ export default {
       width: 70%;
       display: block;
       padding: 5%;
-      background-color: purple;
-      color: white;
+      background-color: $home-li-background;
+      color: $home-li-color;
+      text-transform: uppercase;
+      text-decoration: none;
       margin-left: 10%;
       margin-bottom: 5%;
+      border: 2px solid $home-li-border-background;
+      font-family: 'Orbitron-Bold';
     }
   }
 </style>

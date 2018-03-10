@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Parameters from '@/components/Parameters'
 import Game from '@/components/Game'
+import Rules from '@/components/Rules'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/game',
       name: 'Game',
       component: Game
+    },
+    {
+      path: '/rules',
+      name: 'Rules',
+      component: Rules
     }
   ]
 })

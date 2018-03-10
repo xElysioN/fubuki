@@ -6,6 +6,8 @@ class Fubuki {
   static get DIFFICULTY_EASY () { return 5 }
   static get DIFFICULTY_MEDIUM () { return 6 }
   static get DIFFICULTY_HARD () { return 7 }
+  static get TYPE_ADDITION () { return 'addition' }
+  static get TYPE_MULTIPLICATION () { return 'multiplication' }
 
   constructor () {
     /** Game Grid */
@@ -26,7 +28,7 @@ class Fubuki {
     this.config = {
       'difficulty': Fubuki.DIFFICULTY_EASY,
       'time': false,
-      'type': 'addition'
+      'type': Fubuki.TYPE_ADDITION
     }
   }
 

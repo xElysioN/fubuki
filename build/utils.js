@@ -64,7 +64,7 @@ exports.cssLoaders = function (options) {
       {
         loader: 'sass-resources-loader',
         options: {
-          resources: path.resolve(__dirname, '../src/style/_variables.scss')
+          resources: path.resolve(__dirname, '../src/styles/_variables.scss')
         }
       }),
     stylus: generateLoaders('stylus'),

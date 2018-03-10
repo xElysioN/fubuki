@@ -6,9 +6,7 @@ import 'vue-awesome/icons/cog'
 import Icon from 'vue-awesome/components/Icon'
 import Fubuki from './model/fubuki'
 
-let fubuki = new Fubuki()
-fubuki.generateResultGrid()
-fubuki.generateGrid()
+Vue.prototype.$fubuki = new Fubuki()
 
 Vue.component('icon', Icon)
 Vue.config.productionTip = false
